@@ -1,0 +1,52 @@
+﻿
+@model IEnumerable<Category>
+
+
+<div class="mt-5">
+	<table style="color:white" class="table table table-bordered table-stripped " style="width:100%">
+
+    <thead>
+         <tr>
+
+            <th>
+                Notice Detail
+            </th>
+            <th>
+                Date-Time
+            </th>
+            <th></th>
+
+         </tr>
+        
+    </thead>
+
+
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td Width:50%>
+                    @obj.name
+                </td>
+
+                <td Width:30%>
+                    @obj.CreatedDateTime
+                </td>
+
+                <td >
+
+                    
+
+                </td>
+
+               
+            </tr>
+            
+        }
+
+
+    </tbody>
+
+</table>
+</div>
+
